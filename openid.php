@@ -8,8 +8,8 @@ if (isset($_GET['logout'])) {
   session_destroy();
   session_unset();
   unset($_SESSION);
-  "https://id-sandbox.cashtoken.africa/account/signout"
   header('Location: http://localhost:3000');
+  
   die();
 }
 
