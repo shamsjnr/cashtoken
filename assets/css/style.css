@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: transparent;
+  color: inherit;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+}
+div, form {
+  width: 100%;
+  padding: 8px 12px;
+  max-width: 600px;
+  position: relative;
+}
+div#main {
+  background-color: #212121;
+  color: #fff;
+  height: 100%;
+  max-width: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+input {
+  display: block;
+  outline: none;
+  width: 100%;
+  padding: 1em 1.5em;
+  border-radius: 24px;
+  border: 1px solid #555;
+  transition: all .4s ease;
+  margin-left: auto;
+  font-size: inherit;
+  z-index: 1;
+}
+input + label {
+  display: block;
+  position: absolute;
+  top: 50%; left: 1rem;
+  color: #ccc;
+  cursor: text;
+  transform: translate(12px, -50%);
+  transition: all .4s ease;
+}
+input::placeholder {color: transparent;}
+input:focus, input:valid, input:not(:placeholder-shown) {
+  width: 75%;
+  border-color: #863;
+}
+input:valid {border-color: #272;}
+input:focus + label, input:valid + label {
+  transform: translate(6px, -50%);
+}
+button {
+  display: block;
+  letter-spacing: 1px;
+  margin: auto;
+  padding: 12px 18px;
+  border: none;
+  outline: none;
+  background-color: #fc3;
+  border-radius: 18px;
+  font-size: inherit;
+  cursor: pointer;
+  color: #212121;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 8px 12px;
+  margin-top: 12px;
+  border: 1px solid #fc3;
+  border-radius: 16px;
+  text-shadow: none;
+  transition: all .3s ease;
+}
+a:hover {
+  background-color: #fc3;
+  color: #212121;
+}
