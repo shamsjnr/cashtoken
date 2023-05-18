@@ -9,7 +9,6 @@ if (isset($_GET['logout'])) {
   session_unset();
   unset($_SESSION);
   header('Location: http://localhost:3000');
-  
   die();
 }
 
