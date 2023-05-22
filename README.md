@@ -21,7 +21,7 @@ Deliverable:
 A simple project(tracked in git) containing a simple landing page and a protected profile page. 
 
 ## Installation
-  1. nstall PHP (preferrably version 8.x) on your computer
+  1. Install PHP (preferrably version 8.x) on your computer
 
   2. Open the command prompt / terminal
 
